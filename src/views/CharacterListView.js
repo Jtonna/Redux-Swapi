@@ -12,14 +12,14 @@ class CharacterListView extends React.Component {
 
   componentDidMount() {
     // call our action
-    console.log('character list view says:' this.props )
+    console.log('character list view says:', this.props )
     this.props.addCharacter('Jtonna');
   }
 
   render() {
     if (this.props.fetching) {
       // return something here to indicate that you are fetching data
-      return {console.log('character list view fetching is working')}
+      return console.log('character list view fetching is working')
     }
     return (
       <div className="CharactersList_wrapper">
@@ -42,6 +42,6 @@ export default connect(
   mapStateToProps /* mapStateToProps replaces null here */,
   {
     /* action creators go here */
-    assCharacter
+    addCharacter
   }
 )(CharacterListView);
