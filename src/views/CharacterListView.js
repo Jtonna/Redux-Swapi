@@ -19,7 +19,7 @@ class CharacterListView extends React.Component {
   render() {
     if (this.props.fetching) {
       // return something here to indicate that you are fetching data
-      return console.log('character list view fetching is working')
+      return <p> magic is happening </p>
     }
     return (
       <div className="CharactersList_wrapper">
